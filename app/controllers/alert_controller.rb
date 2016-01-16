@@ -7,6 +7,7 @@ class AlertController < ApplicationController
 #ololo
   def index
     redirect_to :action => 'show_list'
+    $api_log.info("ololo")
   end
 
   def show_list
