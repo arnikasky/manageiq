@@ -4,6 +4,7 @@ class AlertController < ApplicationController
   after_action :cleanup_action
   after_action :set_session_data
 
+#ololo
   def index
     redirect_to :action => 'show_list'
   end
