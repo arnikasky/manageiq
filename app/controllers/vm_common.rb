@@ -128,7 +128,7 @@ module VmCommon
 
   def launch_html5_console
     password, host_address, host_port, _proxy_address, _proxy_port, protocol, ssl = @sb[:html5]
-
+    @vm = @record = identify_record(params[:id], VmOrTemplate)
     case protocol
     when 'spice'     # spice, vnc - from rhevm
       view = "vm_common/console_spice"
